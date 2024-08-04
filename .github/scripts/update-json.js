@@ -24,7 +24,7 @@ function encrypt(text, crypto_key, crypto_iv) {
 
 
 // Path to the JSON file in the repository
-const jsonFilePath = path.join(__dirname, '../../conf.json');
+const jsonFilePath = path.join(__dirname, '../../stadiums_conf.json');
 
 // Read the JSON file
 const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf8'));
