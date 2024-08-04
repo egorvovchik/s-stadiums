@@ -30,8 +30,8 @@ const jsonFilePath = path.join(__dirname, '../../stadiums_conf.json');
 const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf8'));
 
 // Update the JSON values
-jsonData.e = newValueE;
-jsonData.l = encrypt(newValueL, key, iv);
+jsonData.stadiums_e = newValueE;
+jsonData.stadiums_l = encrypt(newValueL, key, iv);
 
 // Write the updated JSON back to the file
 fs.writeFileSync(jsonFilePath, JSON.stringify(jsonData, null, 2), 'utf8');
